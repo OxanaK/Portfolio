@@ -280,8 +280,8 @@
                 }
 
 
-
-                .navbar {
+                
+                #navbar {
                     position: fixed;
                     display: flex;
                     align-items: center;
@@ -341,7 +341,7 @@
                 }
 
 
-                #welcome_section,
+                #welcome-section,
                 #myProjects,
                 #aboutMe {
                     display: block;
@@ -355,7 +355,7 @@
                     box-shadow: 5px 5px 10px #808080;
                 }
 
-                #welcome_section {
+                #welcome-section {
                     margin-top: 6rem;
                 }
 
@@ -385,11 +385,11 @@
 
 
     <header>
-        <nav class="navbar" >
+        <nav id="navbar" >
             <span class="brand" href="#home"><span class="colorRCode bigLetter">O</span>xana <span class="colorB bigLetter">K</span>risyuk</span>
 
             <ul class="menu" id="menu">
-                <li class="menu-item"><a class="nav-link current-section" href="#welcome_section" id="a_welcome" data-to="welcome">Welcome();</a></li>
+                <li class="menu-item"><a class="nav-link current-section" href="#welcome-section" id="a_welcome" data-to="welcome">Welcome();</a></li>
                 <li class="menu-item"><a class="nav-link" href="#aboutMe" id="a_aboutMe" data-to="aboutMe">AboutMe();</a></li>
                 <li class="menu-item"><a class="nav-link" href="#myProjects" id="a_myProjects" data-to="myProjects">MyProjects();</a></li>
                 <li class="menu-item"><a class="nav-link" href="#contactMe" id="a_contactMe" data-to="contactMe">ContactMe();</a></li>
@@ -400,10 +400,10 @@
         
     </header>
     
-    <div id="welcome_section">
+    <div id="welcome-section">
         <section id="welcome" class="section">
         
-             <p  id="divOK" class="bigLetterOK"><span class="letterO colorRCode">O.</span> <span class="colorB">K.</span></p>
+             <h1  id="divOK" class="bigLetterOK"><span class="letterO colorRCode">O.</span> <span class="colorB">K.</span></h1>
           
             
             
@@ -443,12 +443,24 @@
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;my.education = {</code>
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;degree: <span class="colorRCode">"Tomsk State Uneversity"</span>,</code>         
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self_taught: { </code>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cursera: [<span class="colorRCode">"Front-End Web Development with React"</span>,
-                    <span class="colorRCode">"HTML, CSS, and Javascript for Web Developers"</span>,
-                    <span class="colorRCode">"HTML, CSS"</span>,
-                    <span class="colorRCode">"Javascript"</span>]
+                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cursera: [
+                    <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/CMB65833K6PZ?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"Front-End Web Development with React"</span>, </a>
+                   
+                    <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/UUQDFPYYV7XZ?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"HTML, CSS, and Javascript for Web Developers"</span>, </a>
+
+                    <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/UKQYJ4FD9MWP?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"HTML, CSS"</span>, </a>
+                    
+                   <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/W58TFXBR3H3U?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"Javascript"</span>, </a>
+                    <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/FHJX8M4ZCU8A?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"Web Development"</span> </a>
+
+                    ]
                 </code>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free_Code_Camp: <span class="colorRCode"> "Krisyuk"</span>,</code>             
+
+                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free_Code_Camp: [
+                    <a class="nav_link_func" href="https://www.freecodecamp.org/certification/oxana_k/responsive-web-design" target="_blank"><span class="colorRCode">"Responsive Web Design"</span> </a>
+                    <a class="nav_link_func" href="" target="_blank"><span class="colorRCode">"Javascript Algorithms And Data Structures"</span> </a>,
+                    <a class="nav_link_func" href="" target="_blank"><span class="colorRCode">"Front End Libraries"</span> </a>,
+                 ]</code>             
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code>
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;};</code>
                 <br />
@@ -460,7 +472,8 @@
                     <span class="colorRCode">"jQuery"</span>,
                     <span class="colorRCode">"React"</span>,
                     <span class="colorRCode">"Bootstrap"</span>,
-                <span class="colorRCode">"MS SQL"</span>,</code>
+                    <span class="colorRCode">"Redux"</span>,
+                <span class="colorRCode">"MS SQL"</span>];</code>
 
                 
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;}</code>
@@ -469,6 +482,7 @@
             </div>
         </section>
     </div>
+
     <div id="myProjects">
 
         <section id="projects" class="section">
@@ -523,16 +537,16 @@
                 <code><span class="colorBCode"> function</span> MyProjects() {</code>
                 <br />
                 <code>
-                    &nbsp;&nbsp;&nbsp;&nbsp;my.projects = [<a class="nav_link_func" href="" id="pj_Drivers_Test" data-to="myProjects"><span class="colorRCode">"The Drivers License Practice Test"</span></a>,
-                    <a class="nav_link_func" href="" id="pj_CoffeeTime" data-to="aboutMe"><span class="colorRCode">"CoffeeTime"</span></a>,
-                    <a class="nav_link_func" href="" id="pj_Coffee&&Code" data-to="aboutMe"><span class="colorRCode">"Coffee&&Code"</span></a>,
-                    <a class="nav_link_func" href="" id="pj_GrandMa_Cat_Market" data-to="aboutMe"><span class="colorRCode">"GrandMa Cat Market"</span></a>,
-                    <a class="nav_link_func" href="" id="pj_GrandMa_Cats" data-to="aboutMe"><span class="colorRCode">"GrandMa Cats"</span></a>,
-                    <a class="nav_link_func" href="" id="pj_Cartoon_Ship" data-to="aboutMe"><span class="colorRCode">"Cartoon Ship"</span></a>];
+                    &nbsp;&nbsp;&nbsp;&nbsp;my.projects = [<a class="nav_link_func project-tile" href="https://oxanak.github.io/DrivingTest/Test.html" id="pj_Drivers_Test" data-to="myProjects"><span class="colorRCode">"The Drivers License Practice Test"</span></a>,
+                    <a class="nav_link_func project-tile" href="" id="pj_CoffeeTime" data-to="aboutMe"><span class="colorRCode">"CoffeeTime"</span></a>,
+                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/CoffeeAndCode/HtmlPage1.html" id="pj_Coffee&&Code" data-to="aboutMe"><span class="colorRCode">"Coffee&&Code"</span></a>,
+                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/GrandMaCatMarket/GrandMaCatMarket.html" id="pj_GrandMa_Cat_Market" data-to="aboutMe"><span class="colorRCode">"GrandMa Cat Market"</span></a>,
+                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/SelectCatsMarket/catStars.html" id="pj_GrandMa_Cats" data-to="aboutMe"><span class="colorRCode">"GrandMa Cats"</span></a>,
+                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/CartoonShip/index.html" id="pj_Cartoon_Ship" data-to="aboutMe"><span class="colorRCode">"Cartoon Ship"</span></a>];
                 </code>
                 <br />
                 <code>
-                    &nbsp;&nbsp;&nbsp;&nbsp;my.projects.unshift(<a class="nav_link_func" href="" id="pj_photoEditior" data-to="myProjects"><span class="colorRCode">online PhotoEditior"</span></a>);
+                    &nbsp;&nbsp;&nbsp;&nbsp;my.projects.unshift(<a class="nav_link_func project-tile" href="https://oxanak.github.io/photoEditor/home.html" id="pj_photoEditior" data-to="myProjects"><span class="colorRCode">online PhotoEditior"</span></a>);
                 </code>
                 <code>}</code>
 
@@ -551,10 +565,10 @@
 
             <code>
                 &nbsp;&nbsp;&nbsp;&nbsp;GetContact(<a class="nav_link_func" href="linkedin.com/in/oxana-krisyuk-1a5643148" target="_blank" >Linkedin, </a>
-                &nbsp;<a class="nav_link_func" href="https://github.com/OxanaK" target="_blank" data-to="myProjects">GitHub, </a>
-                &nbsp;<a class="nav_link_func" href="https://codepen.io/oxana-krisyuk/pens/public" target="_blank" data-to="contactMe">CodePen,</a>
-                &nbsp;<a class="nav_link_func" href="https://www.freecodecamp.org/fcc0e17be37-839c-4e00-a802-d27a30e16aef" target="_blank" data-to="myProjects">FreeCodeCamp, </a>
-                &nbsp;<a class="nav_link_func" href="#myProjects" data-to="myProjects">email);</a>
+                &nbsp;<a id="profile-link"class="nav_link_func" href="https://github.com/OxanaK" target="_blank">GitHub, </a>
+                &nbsp;<a class="nav_link_func" href="https://codepen.io/oxana-krisyuk/pens/public" target="_blank" >CodePen,</a>
+                &nbsp;<a class="nav_link_func" href="https://www.freecodecamp.org/fcc0e17be37-839c-4e00-a802-d27a30e16aef" target="_blank">FreeCodeCamp, </a>
+                &nbsp;<a class="nav_link_func" href="#myProjects">email);</a>
             </code>
 
             <code>&nbsp;&nbsp;&nbsp;&nbsp;}</code>
