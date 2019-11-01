@@ -4,406 +4,75 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+   
     <link href="https://fonts.googleapis.com/css?family=Kalam|Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/StyleSheet1.css" />
+<style>
 
-    <style>
-                .colorG {
-                    color: #e6e7e9;
-                }
-
-               
-                .colorB {
-                    color: #293855;
-                }
-
-                .colorBCode {
-                    color: #6d70cf;
-                }
-
-                .colorRCode {
-                    color: #bf3f3f;
-                }
-
-                .colorG1 {
-                    color: #f2f2f2;
-                }
-
-                /*$redwine: #bf3f3f;
-        $red: #bb3b3b;
-        $white: #fff;
-        $dark-grey: #808080;
-        $light-grey: #f2f2f2;
-            */
-
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    align-items: center;
-                }
-
-
-                .mySlides {
-                    display: none;
-                }
-
-                img {
-                    margin-top:100px;
-                    vertical-align: middle;
-                    border:2px solid #808080;
-                    box-shadow: 5px 5px 10px #808080;
-                }
-
-              
-                .slideshow-container {
-                    max-width: 800px;
-                    position: relative;
-                    margin: auto;
-                    margin-top: 30px;
-                }
-
-              
-                .text {
-                    color: #f2f2f2;
-                    font-size: 15px;
-                    padding: 8px 12px;
-                    position: absolute;
-                    bottom: 8px;
-                    width: 100%;
-                    text-align: center;
-                }
-
-              
-                .numbertext {
-                    color: #f2f2f2;
-                    font-size: 12px;
-                    padding: 8px 12px;
-                    position: absolute;
-                    top: 0;
-                }
-
-                .dot {
-                    height: 15px;
-                    width: 15px;
-                    margin: 0 2px;
-                    background-color: #bbb;
-                    border-radius: 50%;
-                    display: inline-block;
-                    transition: background-color 0.6s ease;
-                }
-
-                .active {
-                    background-color: #717171;
-                }
-
-                .fade {
-                    -webkit-animation-name: fade;
-                    -webkit-animation-duration: 1.5s;
-                    animation-name: fade;
-                    animation-duration: 1.5s;
-                }
-
-                @-webkit-keyframes fade {
-                    from {
-                        opacity: .4;
-                    }
-
-                    to {
-                        opacity: 1;
-                    }
-                }
-
-                @keyframes fade {
-                    from {
-                        opacity: .4;
-                    }
-
-                    to {
-                        opacity: 1;
-                    }
-                }
-                 @keyframes color1 {
-                    from {
-                        opacity: .4;
-                    }
-
-                    to {
-                        opacity: 1;
-                    }
-                }
-                  @keyframes color2 {
-                    from {
-                        opacity: .4;
-                    }
-
-                    to {
-                        opacity: 1;
-                    }
-                }
-        @media screen and (max-width: 600px) {
-            .slideshow-container{
-                width:400px;
-            }
-            img{
-                 width:400px;
-            }
-
-           #menu{
-           width:90%;
-           }
-
-           #divOK{
-           font-size:10em;
-              width:90%;
-           }
-           nav{
-            
-           display: inline-block;
-           height:auto;
-           overflow:hidden;
-
-           }
-             nav ul{
-               
-                margin: 0;
-                margin-top: 100px;
-                display: inline-block;
-                width: 100%;
-               
-                font-size:0.6em;
-            }
-
-            nav ul li a {
-    display: block;
-    padding:7px;
-    text-decoration: none;  
-    width: 100%;
-    margin-left:auto;
-    margin-right:auto;
-    border-bottom:1px solid #4D2C18;
-     }
-            nav li:nth-child(1){
-    border-top:1px solid #4D2C18;
-       }
-            
-                span.brand {
-                   width:100%;
-                   display:inline-block;
-                   font-size: 1.5rem;
-              
-                }
-                ul#menu.menu{
-                     width:100%;
-                    margin-top:60px;
-               float:left;
-                   font-size: 1.1rem;
-                }
-        }
-
-
-                @media only screen and (max-width: 300px) {
-                    .text {
-                        font-size: 11px;
-                    }
-                }
-
-                body {
-                    background-color: #e6e7e9;
-                    color: black;
-                    font-family: 'Open Sans', sans-serif;
-                    line-height: 1.4rem;
-                    margin: 0;
-                }
-
-                a {
-                    color: #808080;
-                    font-weight: bold;
-                    text-decoration: none;
-                    cursor: pointer;
-                }
-
-                li {
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 0;
-                    padding-left: 5%;
-                    width: 70%;
-                    display: inline;
-                }
-
-                a:active,
-                a:hover {
-                    outline: 0;
-                    color: #bf3f3f;
-                }
-
-                .nav_link_func {
-                    color: black;
-                }
-
-                img {
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: auto;
-                }
-
-                code {
-                    display: block;
-                    width: 70%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-
-                .brand {
-                    color: #808080;
-                    font-family: 'Quicksand', sans-serif;
-                    font-weight: bold;
-                    padding-left: 20px;
-                    font-size: 1.9rem;
-                    width: 20%;
-                }
-
-
-                .bigLetter {
-                    font-size: 2em;
-                    font-family: 'Kalam', cursive;
-
-                }
-                
-                .bigLetterOK{
-                   
-                   font-size:20em;
-                   color:red;
-                   width:auto;
-                    font-family: 'Kalam', cursive;
-                }
-
-
-                
-                #navbar {
-                    position: fixed;
-                    display: flex;
-                    align-items: center;
-                    background-color: whitesmoke;
-                    font-size: 1.7rem;
-                    height: 5rem;
-                    justify-content: space-between;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    z-index: 1001;
-                   
-                }
-                #divOK{
-             
-                       top:0.7em;
-                       margin-left:auto;
-                       margin-right:auto;
-                     position:relative;
-                    display:block;
-                     width:66%;
-                    height:250px;
-                     color:#293855;
-                    animation: color2 5s infinite;
-                }
-                
-
-                #menu {
-                    width: 70%;
-                    padding-left: 5%;
-                }
-               #logo_img{
-                    width:300px;
-                    border:none;
-                    box-shadow:none;
-                    margin-bottom:30px;
-                }
-
-                div#welcomeFunc,
-                #div#a_myProjects,
-                div#logo {
-                    display: block;
-                    margin-top:8%;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 85%;
-                }
-
-                .bold {
-                    font-weight: bold;
-                }
-
-                .func {
-                    font-family: Arial, Helvetica, sans-serif;
-                    width: 90%;
-                    font-size: 1.5em;
-                }
-
-
-                #welcome-section,
-                #myProjects,
-                #aboutMe {
-                    display: block;
-                    background-color: white;
-                    width: 85%;
-                    height: 87vh;
-                    overflow: hidden;
-                    margin-left: auto;
-                    margin-right: auto;
-                    border: 2px solid #808080;
-                    box-shadow: 5px 5px 10px #808080;
-                }
-
-                #welcome-section {
-                    margin-top: 6rem;
-                }
-
-                #contactMe,
-                #myProjects,
-                #aboutMe {
-                    margin-top: 1.5rem;
-                }
-
-                #contactMeFunc {
-                    display: block;
-                    width: 100%;
-                    background-color: whitesmoke;
-                    font-size: 1.3rem;
-                    height: auto;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    z-index: 1001;
-                    border-top: 2px solid #293855;
-                }
-            
-              
-    </style>
+</style>
 </head>
 <body>
+  
+        <nav id="header-nav" class="navbar navbar-default">
+                  <div class="navbar-header">
+
+                    <div id="brandDiv" class="navbar-brand">
+                        <span class="colorRCode bigLetter">O</span>xana <span class="colorB bigLetter">K</span>risyuk
+                    </div>
 
 
-    <header>
-        <nav id="navbar" >
-            <span class="brand" href="#home"><span class="colorRCode bigLetter">O</span>xana <span class="colorB bigLetter">K</span>risyuk</span>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-            <ul class="menu" id="menu">
-                <li class="menu-item"><a class="nav-link current-section" href="#welcome-section" id="a_welcome" data-to="welcome">Welcome();</a></li>
-                <li class="menu-item"><a class="nav-link" href="#aboutMe" id="a_aboutMe" data-to="aboutMe">AboutMe();</a></li>
-                <li class="menu-item"><a class="nav-link" href="#myProjects" id="a_myProjects" data-to="myProjects">MyProjects();</a></li>
-                <li class="menu-item"><a class="nav-link" href="#contactMe" id="a_contactMe" data-to="contactMe">ContactMe();</a></li>
-            </ul>
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav hidden-sm">
+                        <li class="list">
+                            <a href="#welcome-section" id="a_welcome" class="list-group-item">Welcome();
+                             </a>
+                        </li>
 
+                        <li class="list">
+                            <a href="#aboutMe" id="a_aboutMe" class="list-group-item">AboutMe();
+                        </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#myProjects" id="a_myProjects" class="list-group-item">
+                                MyProjects();
+                            </a>
+                        </li>
+
+                        <li class="list">
+                            <a href="#contactMe" id="a_contactMe" class="list-group-item">
+                                ContactMe();
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+       
         </nav>
 
+
+ 
+
+    <div id="mainDiv">
+    <div id="welcome-section" class="container">
+        <div id="welcome" class="menu">
         
-    </header>
-    
-    <div id="welcome-section">
-        <section id="welcome" class="section">
-        
-             <h1  id="divOK" class="bigLetterOK"><span class="letterO colorRCode">O.</span> <span class="colorB">K.</span></h1>
+             <p id="divOK" class="bigLetterOK"><span class="letterO colorRCode">O.</span> <span class="letterK colorB">K.</span></p>
           
             
             
@@ -412,7 +81,7 @@
                 <code><span class="colorBCode"> function</span> Welcome(everybody) {</code>
                 <br />
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="colorBCode">if</span> (everybody.visit === <span class="colorRCode">"first"</span>) {</code>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(everybody.name +<span class="colorRCode">", nice to meet you and welcome!"</span>);</code>
+                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(everybody.name +<span class="colorRCode">", welcome and nice to meet you!</span>);</code>
                 <br />
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="colorBCode">var</span>   my = {    </code>
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;firstName:<span class="colorRCode bold"> "Oxana"</span>,</code>
@@ -431,9 +100,9 @@
 
             </div>
 
-        </section>
+        </div>
     </div>
-    <div id="aboutMe">
+    <div id="aboutMe" class="container">
         <section id="about" class="section">
 
 
@@ -441,49 +110,61 @@
                 <code><span class="colorBCode"> function</span> AboutMe() {</code>
                 <br/>
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;my.education = {</code>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;degree: <span class="colorRCode">"Tomsk State Uneversity"</span>,</code>         
+                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;degree: <span class="colorRCode">"Tomsk State Uneversity"</span>,</code> 
+                <br/>        
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self_taught: { </code>
                 <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cursera: [
                     <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/CMB65833K6PZ?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"Front-End Web Development with React"</span>, </a>
-                   
-                    <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/UUQDFPYYV7XZ?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"HTML, CSS, and Javascript for Web Developers"</span>, </a>
+                    </code>
+                          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/UUQDFPYYV7XZ?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"HTML, CSS, and Javascript for Web Developers"</span>, </a>
+                          </code>
+                          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/UKQYJ4FD9MWP?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"HTML and CSS"</span>, </a>
+                          </code>
+                          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/W58TFXBR3H3U?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"Javascript"</span>, </a>
+                          </code>
+                          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/FHJX8M4ZCU8A?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"Web Development"</span> </a>
+                          ], </code>
 
-                    <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/UKQYJ4FD9MWP?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"HTML, CSS"</span>, </a>
-                    
-                   <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/W58TFXBR3H3U?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"Javascript"</span>, </a>
-                    <a class="nav_link_func" href="https://www.coursera.org/account/accomplishments/certificate/FHJX8M4ZCU8A?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" target="_blank"><span class="colorRCode">"Web Development"</span> </a>
+                        <code>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Free_Code_Camp: [
+                            <a class="nav_link_func" href="https://www.freecodecamp.org/certification/oxana_k/responsive-web-design" target="_blank"><span class="colorRCode">"Responsive Web Design"</span>, </a>
+                            </code>
+                       <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a class="nav_link_func" href="https://www.freecodecamp.org/certification/oxana_k/javascript-algorithms-and-data-structures" target="_blank"><span class="colorRCode">"Javascript Algorithms And Data Structures"</span>, </a>
+                        </code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="nav_link_func" href="" target="_blank"><span class="colorRCode">"Front End Libraries"</span> </a>
+                            ]
+                        </code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;};</code>
+                        <br />
+                        <code>
+                            &nbsp;&nbsp;&nbsp;&nbsp;my.skills = [<span class="colorRCode">"C#"</span>,
+                            <span class="colorRCode">"HTML5"</span>,
+                            <span class="colorRCode">"CSS"</span>,
+                            <span class="colorRCode">"SASS"</span>,
+                            <span class="colorRCode">"JavaScript"</span>,
+                            <span class="colorRCode">"jQuery"</span>,
+                            <span class="colorRCode">"React"</span>,
+                            <span class="colorRCode">"Bootstrap"</span>,
+                            <span class="colorRCode">"Redux"</span>,
+                            <span class="colorRCode">"MS SQL"</span>];
+                        </code>
 
-                    ]
-                </code>
 
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free_Code_Camp: [
-                    <a class="nav_link_func" href="https://www.freecodecamp.org/certification/oxana_k/responsive-web-design" target="_blank"><span class="colorRCode">"Responsive Web Design"</span> </a>
-                    <a class="nav_link_func" href="" target="_blank"><span class="colorRCode">"Javascript Algorithms And Data Structures"</span> </a>,
-                    <a class="nav_link_func" href="" target="_blank"><span class="colorRCode">"Front End Libraries"</span> </a>,
-                 ]</code>             
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</code>
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;};</code>
-                <br />
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;my.skills = [<span class="colorRCode">"C#"</span>,
-                    <span class="colorRCode">"HTML5"</span>,
-                    <span class="colorRCode">"CSS"</span>,
-                    <span class="colorRCode">"SASS"</span>,
-                    <span class="colorRCode">"JavaScript"</span>,
-                    <span class="colorRCode">"jQuery"</span>,
-                    <span class="colorRCode">"React"</span>,
-                    <span class="colorRCode">"Bootstrap"</span>,
-                    <span class="colorRCode">"Redux"</span>,
-                <span class="colorRCode">"MS SQL"</span>];</code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;}</code>
+                        <code>}</code>
 
-                
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;}</code>
-                <code>}</code>
-
-            </div>
+</div>
         </section>
     </div>
 
-    <div id="myProjects">
+    <div id="myProjects" class="container">
 
         <section id="projects" class="section">
             <div class="slideshow-container">
@@ -520,7 +201,12 @@
                 <div class="mySlides fade">
                     <div class="numbertext">6 / 7</div>
                     <img src="img/catsMarket.jpg" style="width:100%">
-                    <div class="text">GrandMa Cats</div>
+                    <div class="text">Meow Market</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="img/quoteMashine.png" style="width:100%">
+                    <div class="text">A Random Quote Machine</div>
                 </div>
 
             </div>
@@ -537,16 +223,22 @@
                 <code><span class="colorBCode"> function</span> MyProjects() {</code>
                 <br />
                 <code>
-                    &nbsp;&nbsp;&nbsp;&nbsp;my.projects = [<a class="nav_link_func project-tile" href="https://oxanak.github.io/DrivingTest/Test.html" id="pj_Drivers_Test" data-to="myProjects"><span class="colorRCode">"The Drivers License Practice Test"</span></a>,
-                    <a class="nav_link_func project-tile" href="" id="pj_CoffeeTime" data-to="aboutMe"><span class="colorRCode">"CoffeeTime"</span></a>,
-                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/CoffeeAndCode/HtmlPage1.html" id="pj_Coffee&&Code" data-to="aboutMe"><span class="colorRCode">"Coffee&&Code"</span></a>,
-                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/GrandMaCatMarket/GrandMaCatMarket.html" id="pj_GrandMa_Cat_Market" data-to="aboutMe"><span class="colorRCode">"GrandMa Cat Market"</span></a>,
-                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/SelectCatsMarket/catStars.html" id="pj_GrandMa_Cats" data-to="aboutMe"><span class="colorRCode">"GrandMa Cats"</span></a>,
-                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/CartoonShip/index.html" id="pj_Cartoon_Ship" data-to="aboutMe"><span class="colorRCode">"Cartoon Ship"</span></a>];
-                </code>
+                    &nbsp;&nbsp;&nbsp;&nbsp;my.projects = [<a class="nav_link_func project-tile" href="https://oxanak.github.io/DrivingTest/Test.html" id="pj_Drivers_Test" target="_blank"><span class="colorRCode">"The Drivers License Practice Test"</span></a>,
+                    </code>
+                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/QuoteMachine/RandomQuoteMachine.html" id="pj_QuoteMachine" target="_blank"><span class="colorRCode">"RandomQuoteMachine"</span></a>,
+                    </code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a class="nav_link_func project-tile" href="https://oxanak.github.io/CoffeeAndCode/HtmlPage1.html" id="pj_Coffee&&Code" target="_blank"><span class="colorRCode">"Coffee&&Code"</span></a>,
+                            <a class="nav_link_func project-tile" href="https://oxanak.github.io/GrandMaCatMarket/GrandMaCatMarket.html" id="pj_GrandMa_Cat_Market" target="_blank"><span class="colorRCode">"Meow Market"</span></a>,
+                            </code>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/SelectCatsMarket/catStars.html" id="pj_GrandMa_Cats" target="_blank"><span class="colorRCode">"Select Cats Market"</span></a>,
+                                    <a class="nav_link_func project-tile" href="https://oxanak.github.io/CartoonShip/index.html" id="pj_Cartoon_Ship" target="_blank"><span class="colorRCode">"Cartoon Ship"</span></a>];
+                                </code>
                 <br />
                 <code>
-                    &nbsp;&nbsp;&nbsp;&nbsp;my.projects.unshift(<a class="nav_link_func project-tile" href="https://oxanak.github.io/photoEditor/home.html" id="pj_photoEditior" data-to="myProjects"><span class="colorRCode">online PhotoEditior"</span></a>);
+                    &nbsp;&nbsp;&nbsp;&nbsp;my.projects.unshift(<a class="nav_link_func project-tile" href="https://oxanak.github.io/photoEditor/home.html" id="pj_photoEditior" target="_blank"><span class="colorRCode">"online PhotoEditior"</span></a>);
                 </code>
                 <code>}</code>
 
@@ -555,7 +247,9 @@
 
     </div>
 
-    <section id="contactMe" class="section">
+
+    </div>
+    <section id="contactMe" class="section container1 col-lg-4 col-md-12 col-sm-12 col-xs-12">
 
 
         <div id="contactMeFunc" class="func">
@@ -580,6 +274,9 @@
 
 </body>
 </html>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 <script>
         var slideIndex = 0;
         showSlides();
