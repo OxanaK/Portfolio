@@ -9,9 +9,9 @@ JavaScript, HTML/CSS, Bootstrap
 
 ## Images: 
 
-![alt text](https://github.com/OxanaK/Portfolio/blob/master/example_photos/p1.png)
-
 ![alt text](https://github.com/OxanaK/Portfolio/blob/master/example_photos/p2.jpg)
+
+![alt text](https://github.com/OxanaK/Portfolio/blob/master/example_photos/p1.png)
 
 ![alt text](https://github.com/OxanaK/Portfolio/blob/master/example_photos/p3.jpg)
 
